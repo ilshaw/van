@@ -1,6 +1,6 @@
 import { Controller, Get } from "@nestjs/common";
 
-import { ZapService } from "@libs/zap";
+import { ZapService } from "zap";
 
 @Controller("/")
 export class ZipController {

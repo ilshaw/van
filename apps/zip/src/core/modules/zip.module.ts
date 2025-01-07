@@ -1,6 +1,6 @@
 import { Global, Module } from "@nestjs/common";
 
-import { ZapModule } from "@libs/zap";
+import { ZapModule } from "zap";
 
 import { ZipController } from "../controllers/zip.controller";
 
