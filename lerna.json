@@ -3,6 +3,6 @@
     "apps/*",
     "libs/*"
   ],
-  "version": "0.0.2",
+  "version": "0.0.3",
   "$schema": "node_modules/lerna/schemas/lerna-schema.json"
 }
