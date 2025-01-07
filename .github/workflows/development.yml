@@ -7,14 +7,12 @@ on:
 
 jobs:
   checkout:
-    runs-on:
-      - ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v4
   ls:
-    runs-on:
-      - ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       name: ls
       run: ls ./
