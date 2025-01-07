@@ -12,5 +12,9 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-      - name: ls
-        run: ls ./
+  ls:
+    runs-on:
+      - ubuntu-latest
+    steps:
+      name: ls
+      run: ls ./
