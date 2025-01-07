@@ -10,7 +10,7 @@ exports.BarService = void 0;
 const common_1 = require("@nestjs/common");
 let BarService = class BarService {
     getGreeting(name) {
-        return `Hello from ${name}!`;
+        return `Hello from ${name}!?`;
     }
 };
 exports.BarService = BarService;
