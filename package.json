@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "lerna": "^8.1.9"
+  },
+  "workspaces": [
+    "./apps/foo",
+    "./apps/oof",
+    "./libs/bar",
+    "./libs/rab"
+  ],
+  "name": "van"
+}
