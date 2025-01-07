@@ -2,8 +2,7 @@ name: development
 
 on:
   push:
-    branches:
-      - development
+    branches: development
 
 jobs:
   checkout:
