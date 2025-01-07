@@ -13,5 +13,5 @@ jobs:
   ls:
     runs-on: ubuntu-latest
     steps:
-      name: ls
-      run: ls ./
+      - name: ls
+        run: ls ./
