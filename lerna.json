@@ -3,5 +3,7 @@
         "apps/*",
         "libs/*"
     ],
+    "useWorkspaces": true,
+    "npmClient": "npm",
     "version": "independent"
 }
