@@ -11,5 +11,6 @@
     "build": "nest build"
   },
   "version": "0.0.4",
+  "private": true,
   "name": "foo"
 }
