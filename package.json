@@ -3,8 +3,8 @@
     "lerna": "^8.1.9"
   },
   "workspaces": [
-    "./apps/foo",
-    "./libs/bar"
+    "apps/*",
+    "libs/*"
   ],
   "version": "0.0.1",
   "name": "van"
