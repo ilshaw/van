@@ -6,6 +6,8 @@
   "scripts": {
     "build": "nest build"
   },
+  "version": "0.0.1",
+  "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
   "name": "bar"
 }

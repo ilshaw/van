@@ -4,9 +4,8 @@
   },
   "workspaces": [
     "./apps/foo",
-    "./apps/oof",
-    "./libs/bar",
-    "./libs/rab"
+    "./libs/bar"
   ],
+  "version": "0.0.1",
   "name": "van"
 }
