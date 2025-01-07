@@ -1,11 +1,23 @@
 {
-  "devDependencies": {
-    "lerna": "^8.1.9"
-  },
-  "workspaces": [
-    "apps/*",
-    "libs/*"
-  ],
-  "version": "0.0.1",
-  "name": "van"
+    "devDependencies": {
+        "lerna": "^8.1.9"
+    },
+    "workspaces": [
+        "apps/*",
+        "libs/*"
+    ],
+    "scripts": {
+        "foo:start:development": "lerna run start:development --scope foo",
+        "foo:start:production": "lerna run start:production --scope foo",
+        "foo:build:production": "lerna run build:production -- scope foo",
+        "zip:start:development": "lerna run start:development --scope zip",
+        "zip:start:production": "lerna run start:production --scope zip",
+        "zip:build:production": "lerna run build:production -- scope zip",
+        "bar:build:production": "lerna run build:production -- scope bar",
+        "zap:build:production": "lerna run build:production -- scope zap",
+        "start:development": "lerna run start:development",
+        "start:production": "lerna run start:production",
+        "build:production": "lerna run build:production "
+    },
+    "name": "van"
 }

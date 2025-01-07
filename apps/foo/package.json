@@ -10,7 +10,7 @@
     "scripts": {
         "start:development": "nest start --watch",
         "start:production": "node ./dist/main.js",
-        "build:development": "nest build"
+        "build:production": "nest build"
     },
     "version": "0.0.8",
     "private": true,

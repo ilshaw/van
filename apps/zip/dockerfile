@@ -22,9 +22,9 @@ COPY ./libs/zap/tsconfig.json ./libs/zap/tsconfig.json
 
 COPY ./lerna.json ./lerna.json
 
-RUN npm exec -- lerna run build:development --scope zap
+RUN npm exec -- lerna run build:production --scope zap
 
-RUN npm exec -- lerna run build:development --scope zip
+RUN npm exec -- lerna run build:production --scope zip
 
 FROM node:22.10.0 AS image
 
