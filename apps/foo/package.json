@@ -4,7 +4,7 @@
         "@nestjs/common": "^10.4.15",
         "@nestjs/core": "^10.4.15",
         "@nestjs/platform-fastify": "^10.4.15",
-        "bar": "^0.0.7",
+        "bar": "^0.0.8",
         "reflect-metadata": "^0.2.2"
     },
     "scripts": {
@@ -12,7 +12,7 @@
         "start:production": "node ./dist/main.js",
         "build:development": "nest build"
     },
-    "version": "0.0.7",
+    "version": "0.0.8",
     "private": true,
     "name": "foo"
 }
