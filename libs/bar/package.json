@@ -1,14 +1,14 @@
 {
-  "dependencies": {
-    "@nestjs/cli": "^10.4.9",
-    "@nestjs/common": "^10.4.15"
-  },
-  "scripts": {
-    "build": "nest build"
-  },
-  "version": "0.0.7",
-  "private": true,
-  "types": "./dist/index.d.ts",
-  "main": "./dist/index.js",
-  "name": "bar"
+    "dependencies": {
+        "@nestjs/cli": "^10.4.9",
+        "@nestjs/common": "^10.4.15"
+    },
+    "scripts": {
+        "build:development": "nest build"
+    },
+    "version": "0.0.7",
+    "private": true,
+    "types": "./dist/index.d.ts",
+    "main": "./dist/index.js",
+    "name": "bar"
 }
