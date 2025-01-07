@@ -9,5 +9,5 @@
   "version": "0.0.2",
   "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
-  "name": "bar"
+  "name": "@van/bar"
 }
