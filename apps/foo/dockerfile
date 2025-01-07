@@ -1,0 +1,47 @@
+FROM node:22.10.0 AS build
+
+WORKDIR /app
+
+COPY ./apps/foo/package.json ./apps/foo/package.json
+
+COPY ./libs/bar/package.json ./libs/bar/package.json
+
+COPY ./package-lock.json ./package-lock.json
+
+COPY ./package.json ./package.json
+
+RUN npm ci
+
+COPY ./apps/foo/src ./apps/foo/src
+
+COPY ./apps/foo/tsconfig.json ./apps/foo/tsconfig.json
+
+COPY ./libs/bar/src ./libs/bar/src
+
+COPY ./libs/bar/tsconfig.json ./libs/bar/tsconfig.json
+
+COPY ./lerna.json ./lerna.json
+
+RUN npm exec -- lerna run build --scope bar
+
+RUN npm exec -- lerna run build --scope foo
+
+FROM node:22.10.0 AS image
+
+WORKDIR /app
+
+COPY --from=build /app/apps/foo/dist /app/apps/foo/dist
+
+COPY --from=build /app/apps/foo/package.json /app/apps/foo/package.json
+
+COPY --from=build /app/libs/bar/dist /app/libs/bar/dist
+
+COPY --from=build /app/libs/bar/package.json /app/libs/bar/package.json
+
+COPY --from=build /app/node_modules /app/node_modules
+
+COPY --from=build /app/lerna.json /app/lerna.json
+
+COPY --from=build /app/package.json /app/package.json
+
+CMD ["npm", "exec", "--", "lerna", "run", "start:production", "--scope", "foo"]
