@@ -3,7 +3,6 @@
         "apps/*",
         "libs/*"
     ],
-    "conventionalCommits": true,
     "npmClient": "npm",
     "version": "independent"
 }
