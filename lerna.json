@@ -3,6 +3,11 @@
         "apps/*",
         "libs/*"
     ],
+    "command": {
+        "version": {
+            "message": "chore: updated version"
+        }
+    },
     "npmClient": "npm",
     "version": "independent"
 }
