@@ -5,7 +5,7 @@
     ],
     "command": {
         "version": {
-            "message": "chore: updated version"
+            "message": "chore: updated package version"
         }
     },
     "npmClient": "npm",
