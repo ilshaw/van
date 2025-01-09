@@ -5,9 +5,8 @@
     ],
     "command": {
         "version": {
-            "gitTagVersion": false,
-            "gitTag": false,
-            "message": "chore: updated package version"
+            "message": "chore: updated package version",
+            "gitTag": false
         }
     },
     "npmClient": "npm",
