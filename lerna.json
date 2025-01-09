@@ -8,6 +8,7 @@
             "message": "chore: updated package version"
         }
     },
+    "noGitTagVersion": true,
     "npmClient": "npm",
     "version": "independent"
 }
