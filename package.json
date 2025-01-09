@@ -19,6 +19,7 @@
         "start:production": "lerna run start:production",
         "build:production": "lerna run build:production "
     },
+    "version": "0.0.0",
     "private": true,
     "name": "van"
 }
