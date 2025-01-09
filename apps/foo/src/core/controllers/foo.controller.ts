@@ -8,6 +8,6 @@ export class FooController {
 
     @Get("/")
     public getGreeting() {
-        return this.barService.getGreeting("foo");
+        return this.barService.getGreeting("fooo");
     }
 }
